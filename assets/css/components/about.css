@@ -1,0 +1,16 @@
+.about{
+    padding: 32px;
+}
+
+.about p{
+    font-size: var(--font-16);
+    color: var(--font-about);
+    line-height: 1.6;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+span{
+    color: var(--span);
+}
+

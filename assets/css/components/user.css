@@ -30,10 +30,12 @@
 }
 
 .user__content h1{
-    font-size: var(--font-32) ;
+    font-size: var(--font-32);
+    color: var(--font-title);
 }
 
 .user__content p{
     font-size: var(--font-18);
     font-weight: 300;
+    color: var(--font-title);
 }

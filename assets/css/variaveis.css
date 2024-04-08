@@ -1,30 +1,33 @@
 :root {
-  --primary: #334155;
-  --secondary: #2C2D2E;
+    --primary: #545533;
+    --secondary: #2C2D2E;
 
-  --link: #107fd2;
+    --font-title: #FED3B6;
+    --font-about: #E6EEF5;
+    --span: #FED3B6;
+
+    --link: #FED3B6;
  
-  --background-card: #FFF;
-  --background-badge: #E6EEF5;
-  --background-body: #F2F5F9;
+    --background-card: #455350;
+    --background-badge: #E6EEF5;
+    --background-body: #6E827C;
 
-  --shadow-image: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
-  --shadow-card: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    --shadow-image: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px   0px 8px;
+    --shadow-card: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px  1px 2px 0px;
 
-
-    /* cor das fontes
-    --primary-color: #F4F4F2;
+    /* cor hover */
+    --hover-orange: #C28C67;
     --secondary-color: #FFD8F4;
-    --tertiary-color: #E6E1FF;*/
+    --tertiary-color: #E6E1FF;
 
     /* tamanho e familia da fonte */
+    --font-16: 1rem; /* 16px relativo ao tamanho */
     --font-18: 1.125rem; /* 18px relativo ao tamanho padrão */
+    --font-20: 1.25rem; /* 20px relativo ao tamnho da fonte */
+    --font-22: 1.375rem; /* 22px relativo ao tamnho da fonte */
+    --font-28: 1.75rem; /* 28px relativo ao tamnho da fonte */
     --font-32: 2rem; /* 32px relativo ao tamanho padrão */
-    --font-1_3rem: 1.3rem; /* 20.8pxrelativo ao tamnho da fonte */
-    --font-1_25rem: 1.25rem; /* 20px relativo ao tamnho da fonte */
-    --font-1_4rem: 1.4rem; /* 22.4px relativo ao tamnho da fonte */
-    --font-3_5rem: 3.5rem; /* 30px tamnho do titulo topo */
-    --font-5rem: 5rem; /* 30px tamnho do titulo topo */
+    
     --font-family: "Poppins", sans-serif;
   }
   
