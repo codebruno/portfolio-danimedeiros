@@ -1,9 +1,7 @@
 @import './variaveis.css';
 @import './globais.css';
 
-@import './components/header.css';
-@import './components/navbar.css';
 @import './components/user.css';
 @import './components/social.css';
-@import './components/portfolio.css';
+@import './components/projects.css';
 @import './components/about.css';
