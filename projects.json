@@ -1,20 +1,38 @@
 [
     {
-      "name": "",
-      "image": "",
-      "tags": ["", "", ""],
+      "name": "Gym Academia",
+      "image": "./assets/images/gym_academia.jpg",
+      "tags": ["HTML", "CSS", "Javascript"],
       "link": ""
     },
-      {
-      "name": "",
-      "image": "",
-      "tags": ["", "", ""],
+    {
+      "name": "Comercial",
+      "image": "./assets/images/comercial.jpg",
+      "tags": ["HTML", "CSS", "Javascript"],
       "link": ""
     },
-      {
-      "name": "",
-      "image": "",
-      "tags": ["", "", ""],
+    {
+      "name": "Catia Rodrigues",
+      "image": "./assets/images/catia_rodrigues.jpg",
+      "tags": ["HTML", "CSS", "Javascript"],
+      "link": ""
+    },
+    {
+      "name": "Fashion",
+      "image": "./assets/images/fashion.jpg",
+      "tags": ["HTML", "CSS", "Javascript"],
+      "link": ""
+    },
+    {
+      "name": "Recicla & Cria",
+      "image": "./assets/images/recicla_cria.jpg",
+      "tags": ["HTML", "CSS", "Javascript"],
+      "link": ""
+    },
+    {
+      "name": "imobiliaria",
+      "image": "./assets/images/imobiliaria.jpg",
+      "tags": ["HTML", "CSS", "Javascript"],
       "link": ""
     }
   ]
