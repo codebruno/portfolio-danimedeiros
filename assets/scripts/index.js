@@ -1,18 +1,39 @@
-const elemProjects = document.getElementById("project__content")
+const elemProjects = document.getElementById('project__content')
 
-const createImage = (project) => {
+const createImage = (projectImage) => {
     const elemPicture = document.createElement('picture')
     const elemImg = document.createElement('img')
 
-    elemImg.setAttribute('src', project.image)
+    elemImg.setAttribute('src', projectImage)
 
     elemPicture.appendChild(elemImg)
 
     return elemPicture
 }
 
-const loadProjets = (projects) => {
-    projects.forEach(project => {
+
+const createStrong = (projectName) => {
+    const elemStrong = document.createElement('strong')
+      elemStrong.innerText = projectName
+
+      return elemStrong
+}
+
+const createTags = (projectTags) => {
+    const elemTags = document.createElement('div')
+
+      projectTags.forEach(tag => {
+        const elemTag = document.createElement('span')
+        elemTag.innerText = tag
+
+        elemTags.appendChild(elemTag)
+    })
+
+    return  elemTags
+}
+
+
+const createProject = (project) => {
       const elemProject = document.createElement('a')
 
       elemProject.setAttribute('href', project.link)
@@ -20,43 +41,26 @@ const loadProjets = (projects) => {
 
       elemProject.classList.add('project')
 
-      const elemPicture = document.createElement('picture')
-      const elemImg = document.createElement('img')
+      //* add imagem de capa *//
+      elemProject.appendChild(createImage(project.image))
 
-      elemImg.setAttribute('src', project.image)
+      //* add nome do projeto *//
+      elemProject.appendChild(createStrong(project.name))
 
-      elemPicture.appendChild(elemImg)
+      //* add tag do projeto *//
+      elemProject.appendChild(createTags(project.tags))
 
-      //* add picture*//
-      elemProject.appendChild(elemPicture)
+      return elemProject
+}
 
-      const elemStrong = document.createElement('strong')
-      elemStrong.innerText = project.name
-
-      //* add strong*//
-      elemProject.appendChild(elemStrong)
-
-      const elemTags = document.createElement('div')
-      project.tags.forEach(tag => {
-        const elemTag = document.createElement('span')
-        elemTag.innerText = tag
-
-        elemTags.appendChild(elemTag)
-    })
-
-      //* add tag*//
-      elemProject.appendChild(elemTags)
-
-      elemProjects.appendChild(elemProject)
-
-});
-
+const loadProjects = (projects) => {
+    projects.forEach(project => {
+        elemProjects.appendChild(createProject(project))
+    });
 }
 
 
-
-
-fetch('/projects.json').then(response => response.json()).then(loadProjets) 
+fetch('/projects.json').then(response => response.json()).then(loadProjects) 
 
     
    
