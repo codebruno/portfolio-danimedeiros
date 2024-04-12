@@ -14,3 +14,14 @@ span{
     color: var(--span);
 }
 
+
+@media (max-width: 1080px) {
+    .about{
+        padding: var(--font-24);
+    }
+
+    .about p{
+        font-size: var(--font-14);
+        
+    }
+}
